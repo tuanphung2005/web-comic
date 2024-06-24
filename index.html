@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comic viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul id="top-bar">
+        <li><button id="indicator">></button></li>
+        <li><button>index</button></li>
+    </ul>
+    <div id="side-bar">
+        <ul>
+            <li class="element-wraper">
+                <a href="#" class="comic-side-bar">
+                    <span class="author-side-bar">placeholder</span>
+                    <span class="comic-name-side-bar">placeholder</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="comic-viewer">
+        <div id="comic-control">
+            <p>Page number: <span id="page-num">0</span></p>
+            <img id="comic" src="https://thispersondoesnotexist.com/" alt="comic">
+            <div id="button-control">
+                <button onclick="firstPage()"><<</button>
+                <button onclick="prevPage()"><</button>
+                <button onclick="nextPage()">></button>
+                <button onclick="lastPage()">>></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
